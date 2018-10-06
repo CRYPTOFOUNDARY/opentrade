@@ -1,3 +1,8 @@
+.idea/
+package-lock.json
+server/modules/private.js
+.DS_Store
+
 # SQLite Database
 /server/database/sqlite.db
 *.db

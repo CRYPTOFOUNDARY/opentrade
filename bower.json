@@ -1,0 +1,14 @@
+{
+  "name": "ForkFork",
+  "description": "Forks Exchange",
+  "main": "",
+  "authors": [
+    "troublesomepony <troublesomepony@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/CRYPTOFOUNDARY/opentrade",
+  "private": true,
+  "dependencies": {
+    "bootswatch": "^4.1.3"
+  }
+}

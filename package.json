@@ -1,18 +1,27 @@
 {
-  "name": "OpenTrade",
-  "version": "0.1.0",
-  "description": "Open Source Cryptocurrency Exchange",
+  "name": "ForkFork",
+  "version": "0.2.1",
+  "description": "Forks Exchange",
+  "app": {
+    "url": "https://fork.pw",
+    "name": "ForkFork",
+    "description": "Forks Exchange"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/3s3s/opentrade.git"
+    "url": "https://github.com/CRYPTOFOUNDARY/opentrade.git"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
+    "cors": "latest",
+    "debug": "latest",
+    "ejs": "latest",
     "express": "latest",
-	  "ws": "latest",
-	  "sendmail": "latest",
-	  "sqlite3": "latest",
-	  "ejs": "latest",
-	  "cors": "latest",
-	  "debug": "latest"
+    "nodemailer": "latest",
+    "prettier": "latest",
+    "sendmail": "latest",
+    "sqlite3": "latest",
+    "supports-color": "latest",
+    "ws": "latest"
   }
 }
