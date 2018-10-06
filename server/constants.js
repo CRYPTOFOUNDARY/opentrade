@@ -1,7 +1,6 @@
 "use strict"
-const
-    fs = require("fs")
-  , {app} = require("../package.json")
+const fs = require("fs"),
+  {app} = require("../package.json")
 const DOMAIN = "fork.pw"
 const SUPPORT_EMAIL = `contact@${DOMAIN}`
 const NOREPLY_EMAIL = `robot@${DOMAIN}`

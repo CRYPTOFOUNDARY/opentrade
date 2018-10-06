@@ -17,7 +17,6 @@ const log_stdout = process.stdout
 console.log = function(d, userID) {
   // trace(d)
   // if (!g_constants.DEBUG_LOG) return
-
   /* log_file.write(util.format(d) + '\n');
   log_stdout.write(util.format(d) + '\n');
   

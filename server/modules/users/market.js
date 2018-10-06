@@ -9,9 +9,9 @@ const wallet = require("./wallet")
 const orders = require("./orders")
 
 exports.Init = function() {
-  // mailer.SendStartAppNotification(ret => {
-  //   console.log(ret.message)
-  // })
+  mailer.SendStartAppNotification(ret => {
+    console.log(ret.message)
+  })
   setInterval(exports.UpdateMarket, 10000)
 
   setTimeout(UpdateExchangeSummary, 10000)
@@ -29,6 +29,7 @@ exports.Init = function() {
             setTimeout(database.EndTransaction, 5000, () => {StartTransaction});
         });
     }*/
+  database.RunTransactions()
 }
 
 function ProcessExchange() {

@@ -1,18 +1,17 @@
 "use strict"
 
 // const sendmail = require('sendmail')();
-const
-    g_constants = require("../constants.js")
-  , mailTransport = require("nodemailer").createTransport({
-      host: "debugmail.io",
-      port: 25,
-      secure: false,
-      auth: {
-        user: "mikhailsedletsky@gmail.com",
-        pass: "e99e54c0-c693-11e8-8dbc-01e6e14839a9"
-      }
-    })
-  , sendmail = mailTransport.sendMail.bind(mailTransport)
+const g_constants = require("../constants.js"),
+  mailTransport = require("nodemailer").createTransport({
+    host: "debugmail.io",
+    port: 25,
+    secure: false,
+    auth: {
+      user: "mikhailsedletsky@gmail.com",
+      pass: "e99e54c0-c693-11e8-8dbc-01e6e14839a9"
+    }
+  }),
+  sendmail = mailTransport.sendMail.bind(mailTransport)
 
 exports.SendPIN = function(email, user, pin, callback) {
   const subject = g_constants.MAILER_NAME + " login confirmation"

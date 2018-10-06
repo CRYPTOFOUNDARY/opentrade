@@ -257,7 +257,7 @@ exports.RunTransactions = function() {
 
   function Begin() {
     g_db.run("BEGIN TRANSACTION", function(err) {
-      if (!err) setTimeout(End, 1000000)
+      if (!err) setTimeout(End, 10000)
       else setTimeout(Begin, 2000)
     })
   }
